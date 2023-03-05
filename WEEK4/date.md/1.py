@@ -1,9 +1,6 @@
-import datetime
+from datetime import *
 
-x = datetime.datetime.now()
-print(x)
+print(date.today())
+x = date.today()- timedelta(5)
 
-u = x.day -5
-#x.day = u
-x2 = datetime.date(x.year, x.month, u)
-print(x2)
+print(f"5 days before: {x}")
