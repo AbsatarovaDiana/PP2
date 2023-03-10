@@ -1,8 +1,8 @@
 import re
 
 txt = str(input())
-x = re.findall('[A-Z]+[a-z]+', txt)
+x = re.match('a.*b$', txt)
 
-print(x)
+print(x.group())
 
 
