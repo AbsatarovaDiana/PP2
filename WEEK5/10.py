@@ -1,4 +1,5 @@
 import re
-def f(mObject):
-    return mObject.group("g1")+ "_" + mObject.group("g2").lower()
-text = "mySuperVar" #camel case
+txt= input()
+x= re.sub("(.)([A-Z])", r"\1_\2", txt).lower()
+
+print(x)
